@@ -1,0 +1,79 @@
+.section-portfolio
+    padding: 93px 0 145px 0
+    .portfolio-container
+        .portfolio-title
+            font-weight: bold
+            font-size: 24px
+            line-height: 29px
+            margin-bottom: 86px
+        .swiper-container
+            position: relative
+            .swiper-wrapper
+                .swiper-slide
+                    .header-slide
+                        font-weight: 600
+                        font-size: 18px
+                        line-height: 25px
+                        margin-bottom: 48px
+                    .slide
+                        display: flex
+                        align-items: flex-start
+                        justify-content: space-between
+                        .text-block
+                            width: 350px
+                            margin-right: 125px
+                            p
+                                font-weight: normal
+                                font-size: 18px
+                                line-height: 30px
+                                text-align: justify
+                        .image-block
+                            max-width: 635px
+                            display: grid
+                            grid-template-areas: "slide-image-1 slide-image-2" "slide-image-3 slide-image-2" "slide-image-3 slide-image-4"
+                            // grid-template-rows: 144px 233px
+                            // grid-template-columns: 350px 255px
+                            grid-gap: 30px
+                            .slide-image-1
+                                display: block
+                                grid-area: slide-image-1
+                                width: 350px
+                                height: 144px
+                                object-fit: cover
+                            .slide-image-2 
+                                display: block
+                                grid-area: slide-image-2
+                                width: 255px
+                                object-fit: cover
+                                height: 233px
+                            .slide-image-3   
+                                display: block
+                                grid-area: slide-image-3
+                                height: 233px
+                                object-fit: cover
+                                width: 349px
+                            .slide-image-4
+                                display: block
+                                grid-area: slide-image-4 
+                                width: 255px
+                                object-fit: cover
+                                height: 144px
+            .block-buttons
+                z-index: 3
+                position: relative
+                left: 15px
+                width: 100px
+                bottom: 0
+                display: flex
+                align-items: center
+                flex-direction: row-reverse
+                justify-content: space-between
+                .swiper-button-next
+                    width: 24px
+                    height: 24px
+                    // display: block
+                .swiper-button-prev
+
+                    // display: block
+                    width: 24px
+                    height: 24px

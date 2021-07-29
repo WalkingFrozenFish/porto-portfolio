@@ -1,11 +1,23 @@
 .section-portfolio
     padding: 93px 0 145px 0
+    @media (min-width: 768px) and (max-width: 991px)
+        padding: 80px 0 120px 0
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px)
+        padding: 70px 0 80px 0
     .portfolio-container
         .portfolio-title
             font-weight: bold
             font-size: 24px
             line-height: 29px
             margin-bottom: 86px
+            @media (min-width: 768px) and (max-width: 991px)
+                text-align: center
+                margin-bottom: 65px
+            /* Landscape phones and portrait tablets */
+            @media (max-width: 767px)
+                text-align: center
+                margin-bottom: 60px
         .swiper-container
             position: relative
             .swiper-wrapper
@@ -15,49 +27,121 @@
                         font-size: 18px
                         line-height: 25px
                         margin-bottom: 48px
+                        @media (min-width: 768px) and (max-width: 991px)
+                            text-align: center
+                            /* Landscape phones and portrait tablets */
+                        @media (max-width: 767px)
+                            text-align: center
                     .slide
                         display: flex
                         align-items: flex-start
                         justify-content: space-between
+                        @media (min-width: 768px) and (max-width: 991px)
+                            display: flex
+                            flex-direction: column
+                            /* Landscape phones and portrait tablets */
+                        @media (max-width: 767px)
+                            display: flex
+                            flex-direction: column
                         .text-block
                             width: 350px
                             margin-right: 125px
+                            /* Landscape tablets and medium desktops */
+                            @media (min-width: 992px) and (max-width: 1199px) 
+                                margin-right: 90px
+                                width: 300px
+                            @media (min-width: 768px) and (max-width: 991px)
+                                margin-right: 0
+                                width: 550px
+                                margin: auto
+                                margin-bottom: 40px
+                                /* Landscape phones and portrait tablets */
+                            @media (max-width: 767px)
+                                margin-right: 0
+                                margin: auto
+                                width: 350px
+                                margin-bottom: 40px
+                                /* Portrait phones and smaller */
+                            @media (max-width: 480px)
+                                width: 340px
                             p
                                 font-weight: normal
                                 font-size: 18px
                                 line-height: 30px
                                 text-align: justify
+                                /* Landscape tablets and medium desktops */
+                                @media (min-width: 992px) and (max-width: 1199px) 
+                                    font-size: 16px
+                                    line-height: 24px
+                                    /* Portrait phones and smaller */
+                                @media (max-width: 767px)
+                                    font-size: 16px
+                                    line-height: 26px
+                                @media (max-width: 480px)
+                                    font-size: 16px
                         .image-block
-                            max-width: 635px
+                            width: 635px
                             display: grid
                             grid-template-areas: "slide-image-1 slide-image-2" "slide-image-3 slide-image-2" "slide-image-3 slide-image-4"
                             // grid-template-rows: 144px 233px
                             // grid-template-columns: 350px 255px
                             grid-gap: 30px
+                            /* Landscape tablets and medium desktops */
+                            @media (min-width: 992px) and (max-width: 1199px) 
+                                // max-width: 560px
+                            @media (min-width: 768px) and (max-width: 991px)
+                                margin: auto
+                                /* Portrait phones and smaller */
+                            @media (max-width: 767px)
+                                margin: auto
+                                width: 350px
+                            @media (max-width: 480px)
+                                width: 340px
+                                grid-gap: 15px
                             .slide-image-1
                                 display: block
                                 grid-area: slide-image-1
                                 width: 350px
                                 height: 144px
                                 object-fit: cover
+                                /* Landscape tablets and medium desktops */
+                                @media (min-width: 992px) and (max-width: 1199px) 
+                                    width: 100%
+                                    /* Portrait phones and smaller */
+                                @media (max-width: 767px)
+                                    width: 100%
+                                @media (max-width: 480px)
+                                    width: 100%
                             .slide-image-2 
                                 display: block
                                 grid-area: slide-image-2
                                 width: 255px
                                 object-fit: cover
                                 height: 233px
+                                @media (max-width: 480px)
+                                    width: 100%
+                                @media (max-width: 767px)
+                                    width: 100%
                             .slide-image-3   
                                 display: block
                                 grid-area: slide-image-3
                                 height: 233px
                                 object-fit: cover
                                 width: 349px
+                                @media (max-width: 767px)
+                                    width: 100%
+                                @media (max-width: 480px)
+                                    width: 100%
                             .slide-image-4
                                 display: block
                                 grid-area: slide-image-4 
                                 width: 255px
                                 object-fit: cover
                                 height: 144px
+                                @media (max-width: 767px)
+                                    width: 100%
+                                @media (max-width: 480px)
+                                    width: 100%
             .block-buttons
                 z-index: 3
                 position: relative
@@ -68,6 +152,11 @@
                 align-items: center
                 flex-direction: row-reverse
                 justify-content: space-between
+                @media (min-width: 768px) and (max-width: 991px)
+                    display: none
+                    /* Landscape phones and portrait tablets */
+                @media (max-width: 767px)
+                    display: none
                 .swiper-button-next
                     width: 24px
                     height: 24px

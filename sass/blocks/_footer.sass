@@ -1,6 +1,8 @@
 .footer
     padding: 93px 0 189px 0
     background-color: #FFFAF2
+    @media (max-width: 480px)
+        padding: 93px 0 150px 0
     .footer-container
         .footer-header
             font-weight: bold
@@ -8,12 +10,24 @@
             line-height: 29px
             color: #333333
             margin-bottom: 51px
+            @media (max-width: 480px)
+                text-align: center
         .block-contacts
             display: flex
             align-items: flex-start
             justify-content: space-between
+            @media (max-width: 480px)
+                display: flex
+                align-items: center
+                flex-wrap: wrap
+                align-items: flex-start
             .social-list
                 list-style: none
+                @media (max-width: 480px)
+                    display: flex
+                    flex-wrap: wrap
+                    flex-basis: 45%
+                    margin-bottom: 40px
                 li
                     margin-bottom: 14px
                     .social-link

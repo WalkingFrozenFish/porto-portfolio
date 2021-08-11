@@ -13,6 +13,8 @@
         /* Landscape phones and portrait tablets */
     @media (max-width: 767px)
         padding: 30px 0 80px 0
+    @media (max-width: 320px)
+        padding: 30px 0 70px 0
     &::after
         content: ""
         width: 100%
@@ -42,6 +44,8 @@
             align-items: center
             flex-direction: column
             margin-bottom: 80px
+        @media (max-width: 320px)
+            margin-bottom: 60px
         .icon
             width: 116px
             fill: #ffffff
@@ -53,6 +57,9 @@
             list-style: none
             display: flex
             align-items: center
+            @media (max-width: 320px)
+                flex-wrap: wrap
+                justify-content: space-evenly
             .navigation-item
                 margin-left: 60px
                 /* Portrait phones and smaller */
@@ -60,6 +67,10 @@
                     margin-left: 30px
                 @media (max-width: 767px)
                     margin-left: 30px
+                @media (max-width: 320px)
+                    margin-left: 15px
+                    // flex-basis: 40%
+                    margin-bottom: 10px
                 &:first-child
                     margin-left: 0
                 .navigation-link
